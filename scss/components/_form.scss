@@ -1,0 +1,23 @@
+.control {
+    background: var(--color-white);
+    min-height: 3.33rem;
+    border-color: transparent;
+    border-radius: 0.33rem;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    color: var(--color-dark-grey);
+    &:focus {
+        border-color: var(--color-secondary);
+    }
+    &.invalid {
+        border: 2px solid var(--color-danger) !important;
+    }
+}
+
+textarea {
+    min-height: 6.66rem;
+    resize: none;
+}

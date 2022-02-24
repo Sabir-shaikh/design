@@ -1,0 +1,131 @@
+@use "mixins" as *;
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.eot');
+    src: url('../fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-Regular.woff2') format('woff2'), url('../fonts/SourceSansPro-Regular.woff') format('woff'), url('../fonts/SourceSansPro-Regular.ttf') format('truetype'), url('../fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Bold.eot');
+    src: url('../fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-Bold.woff2') format('woff2'), url('../fonts/SourceSansPro-Bold.woff') format('woff'), url('../fonts/SourceSansPro-Bold.ttf') format('truetype'), url('../fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Semibold.eot');
+    src: url('../fonts/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-Semibold.woff2') format('woff2'), url('../fonts/SourceSansPro-Semibold.woff') format('woff'), url('../fonts/SourceSansPro-Semibold.ttf') format('truetype'), url('../fonts/SourceSansPro-Semibold.svg#SourceSansPro-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Light.eot');
+    src: url('../fonts/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/SourceSansPro-Light.woff2') format('woff2'), url('../fonts/SourceSansPro-Light.woff') format('woff'), url('../fonts/SourceSansPro-Light.ttf') format('truetype'), url('../fonts/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+.page-wrapper {
+    // padding: 0 10px;
+    // @include media-desktop {
+    //     padding: 0 15px;
+    // }
+}
+
+.container {
+    width: clamp(21rem, 82rem, 100%);
+    margin: 0 auto;
+    padding: 0 10px;
+    &.is-large {
+        // width: clamp(20rem, 104rem, 100%);
+    }
+}
+
+.d-none {
+    display: none;
+    &--tablet {
+        @include media-tablet {
+            display: none;
+        }
+    }
+    &--desktop {
+        @include media-desktop {
+            display: none;
+        }
+    }
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.pt-0 {
+    padding-top: 0 I !important;
+}
+
+.d-block {
+    display: block;
+    &--tablet {
+        @include media-tablet {
+            display: block;
+        }
+    }
+    &--desktop {
+        @include media-desktop {
+            display: block;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section {
+    &.has-padding {
+        padding: 2rem 0;
+        @include media-tablet {
+            padding: 5rem 0;
+        }
+        @include media-desktop {
+            padding: 8.3rem 0;
+        }
+    }
+}
+
+.section-title {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    line-height: 100%;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    @include media-tablet {
+        font-size: 3rem;
+    }
+    &.is-white {
+        color: var(--color-white);
+    }
+}
+
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.note {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--color-white);
+    font-size: 0.86rem;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+}

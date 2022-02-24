@@ -1,0 +1,20 @@
+:root {
+    --color-primary: #008779;
+    --color-secondary: #cf9e69;
+    --color-dark-grey: #444444;
+    --color-grey: #cccccc;
+    --color--light-grey: #f5f5f5;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --font-size: 15px;
+    --font-weight: 400;
+    --font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+    --line-height: 1.5;
+    --color-danger: rgb(255, 0, 0);
+}
+
+body.dark {
+    --color-white: #000000;
+    --color-black: #ffffff;
+    --color-dark-grey: #fff;
+}

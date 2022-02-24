@@ -1,0 +1,25 @@
+.btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.4rem 1.8rem;
+    transition: 0.3s;
+    border: none;
+    min-width: 9.33rem;
+    &.btn-primary {
+        color: var(--color-white);
+        background: var(--color-primary);
+        &:hover,
+        &:focus {
+            background: var(--color-secondary);
+        }
+    }
+    &.btn-white {
+        color: var(--color-secondary);
+        background: var(--color-white);
+        &:hover,
+        &:focus {
+            background: var(--color-secondary);
+            color: var(--color-white);
+        }
+    }
+}
